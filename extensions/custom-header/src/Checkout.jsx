@@ -4,8 +4,13 @@ import {
   Image,
 } from '@shopify/ui-extensions-react/checkout';
 
-export default reactExtension(
+export const checkoutHeader = reactExtension(
   'purchase.checkout.header.render-after',
+  () => <Extension />,
+);
+
+export const thankYouHeader = reactExtension(
+  'purchase.thank-you.header.render-after',
   () => <Extension />,
 );
 

@@ -8,8 +8,13 @@ import {
   useShop,
 } from '@shopify/ui-extensions-react/checkout';
 
-export default reactExtension(
+export const checkoutFooter = reactExtension(
   'purchase.checkout.footer.render-after',
+  () => <Extension />,
+);
+
+export const thankYouFooter = reactExtension(
+  'purchase.thank-you.footer.render-after',
   () => <Extension />,
 );
 
