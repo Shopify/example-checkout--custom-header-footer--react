@@ -24,10 +24,10 @@ module = "./src/Checkout.jsx"
 target = "purchase.thank-you.footer.render-after"
 export = "thankYouFooter"
 
-[extensions.capabilities]
+# [extensions.capabilities]
 # Gives your extension access to directly query Shopify’s storefront API.
 # https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#api-access
-api_access = true
+# api_access = true
 
 # Gives your extension access to make external network calls, using the
 # JavaScript `fetch()` API. Learn more:

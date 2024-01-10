@@ -24,7 +24,7 @@ module = "./src/Checkout.jsx"
 target = "purchase.thank-you.header.render-after"
 export = "thankYouHeader"
 
-[extensions.capabilities]
+# [extensions.capabilities]
 # Gives your extension access to directly query Shopify’s storefront API.
 # https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#api-access
 # api_access = true
