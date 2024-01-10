@@ -9,82 +9,26 @@ export default reactExtension(
   () => <Extension />,
 );
 
+const images = [
+  "https://cdn.shopify.com/files/watering-can-white-300.png",
+  "https://cdn.shopify.com/files/snake-300.png",
+  "https://cdn.shopify.com/files/office.png",
+  "https://cdn.shopify.com/files/monstera-300.png",
+  "https://cdn.shopify.com/files/fiddle-fig-300.png",
+  "https://cdn.shopify.com/files/cat-palm-300.png",
+  "https://cdn.shopify.com/files/bedroom.png",
+  "https://cdn.shopify.com/files/watering-can-black-300.png",
+];
+
 function Extension() {
   return (
       <InlineLayout
-        columns={[
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-          "1fr",
-        ]}
-        spacing="tight"
+        columns="1fr"
+        spacing="loose"
       >
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
-
-        <Image
-          source={
-            "https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
-          }
-        />
+        {images.map((source, index) => (
+          <Image key={index} source={source} />
+        ))}
       </InlineLayout>
   );
 }
