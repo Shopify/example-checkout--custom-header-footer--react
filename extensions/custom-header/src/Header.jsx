@@ -1,7 +1,7 @@
 import {
-  reactExtension,
-  InlineLayout,
   Image,
+  InlineLayout,
+  reactExtension,
 } from '@shopify/ui-extensions-react/checkout';
 
 export const checkoutHeader = reactExtension(

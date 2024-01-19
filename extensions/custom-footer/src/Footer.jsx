@@ -1,10 +1,10 @@
 import {
-  reactExtension,
+  Icon,
   InlineLayout,
   InlineStack,
   Link,
-  Icon,
   Text,
+  reactExtension,
   useShop,
 } from '@shopify/ui-extensions-react/checkout';
 
