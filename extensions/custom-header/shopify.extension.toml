@@ -15,12 +15,12 @@ handle = "custom-header"
 # https://shopify.dev/docs/api/checkout-ui-extensions/unstable/extension-targets-overview
 
 [[extensions.targeting]]
-module = "./src/Checkout.jsx"
+module = "./src/Header.jsx"
 target = "purchase.checkout.header.render-after"
 export = "checkoutHeader"
 
 [[extensions.targeting]]
-module = "./src/Checkout.jsx"
+module = "./src/Header.jsx"
 target = "purchase.thank-you.header.render-after"
 export = "thankYouHeader"
 
