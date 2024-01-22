@@ -26,17 +26,17 @@ function Extension() {
       <InlineStack spacing="extraTight" blockAlignment="center">
         <Link to={storefrontUrl}>Home</Link>
         <Icon source="chevronRight" size="extraSmall" />
-        <Link to={`${storefrontUrl}collections`}>Shop</Link>
+        <Link to={new URL('/collections', storefrontUrl).href}>Shop</Link>
         <Icon source="chevronRight" size="extraSmall" />
         <Text appearance="subdued">Checkout</Text>
       </InlineStack>
 
       <InlineStack spacing="tight" inlineAlignment='end'>
-        <Link to={`${storefrontUrl}sizing`}>Sizing</Link>
-        <Link to={`${storefrontUrl}terms`}>Terms</Link>
-        <Link to={`${storefrontUrl}privacy`}>Privacy</Link>
-        <Link to={`${storefrontUrl}faq`}>FAQ</Link>
-        <Link to={`${storefrontUrl}accessibility`}>Accessibility</Link>
+        <Link to={new URL('/sizing', storefrontUrl).href}>Sizing</Link>
+        <Link to={new URL('/terms', storefrontUrl).href}>Terms</Link>
+        <Link to={new URL('/privacy', storefrontUrl).href}>Privacy</Link>
+        <Link to={new URL('/faq', storefrontUrl).href}>FAQ</Link>
+        <Link to={new URL('/accessibility', storefrontUrl).href}>Accessibility</Link>
       </InlineStack>
     </InlineLayout>
   );

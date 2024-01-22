@@ -34,7 +34,7 @@ function Extension() {
         spacing="loose"
       >
         {images.map((source, index) => (
-          <Image key={index} source={source} />
+          <Image key={index} source={source} aspectRatio={1} />
         ))}
       </InlineLayout>
   );
